@@ -3,42 +3,66 @@
         "id": "1",
         "name": "Summer Tour",
         "image": "https://i.ibb.co/pQ4ymVD/summer-tour-2.webp",
+        "location": "Miami, Florida",
         "price": "570",
+        "rating": "4.2",
+        "persons": "12+",
+        "duration": "4 days",
         "description": ""
     },
     {
         "id": "2",
         "name": "Hiking Tour",
         "image": "https://i.ibb.co/NYJ8RhS/hiking-tour-2.jpg",
+        "location": "Sedona, Arizona",
         "price": "850",
+        "rating": "4.4",
+        "persons": "7+",
+        "duration": "6 days",
         "description": ""
     },
     {
         "id": "3",
         "name": "Diving Tour",
         "image": "https://i.ibb.co/VMbz7Lt/Diving-tour-1.jpg",
+        "location": "Koh Lanta, Thailand",
         "price": "600",
+        "rating": "4.7",
+        "persons": "4+",
+        "duration": "2 days",
         "description": ""
     },
     {
         "id": "4",
         "name": "Winter Action",
         "image": "https://i.ibb.co/4VrGpSr/winter-action-2.jpg",
-        "price": "550",
+        "location": "Paris, France",
+        "price": "850",
+        "rating": "5.0",
+        "persons": "16+",
+        "duration": "7 days",
         "description": ""
     },
     {
         "id": "5",
         "name": "UK Trip",
         "image": "https://i.ibb.co/wW8FRyt/UK-trip-3.webp",
+        "location": "London, UK",
         "price": "570",
+        "rating": "4.0",
+        "persons": "10+",
+        "duration": "4 days",
         "description": ""
     },
     {
         "id": "6",
         "name": "Camping Tour",
         "image": "https://i.ibb.co/fqZVTSZ/camping-tour-1.jpg",
+        "location": "Big Bend, Texas",
         "price": "500",
+        "rating": "4.1",
+        "persons": "20+",
+        "duration": "3 days",
         "description": ""
     }
 ]

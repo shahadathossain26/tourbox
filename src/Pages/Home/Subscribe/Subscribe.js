@@ -3,7 +3,7 @@ import subscribeImage from '../../../assets/download.jpg'
 
 const Subscribe = () => {
     return (
-        <div className='mt-16 relative'>
+        <div className='mt-20 relative'>
             <div className='w-full h-full top-0 left-0 absolute bg-gradient-to-b from-black via-black opacity-30'>
 
             </div>
