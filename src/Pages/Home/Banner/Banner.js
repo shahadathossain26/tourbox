@@ -4,7 +4,7 @@ import Header from '../../Shared/Header/Header';
 
 const Banner = () => {
     return (
-        <div className='w-full relative mx-0'>
+        <div className='w-full relative'>
 
             <div className='w-full h-full top-0 left-0 absolute bg-gradient-to-br from-black via-black-100 opacity-30'>
 
