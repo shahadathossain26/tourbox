@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from '../Shared/Header/Header';
 import loginImage from '../../assets/login_image 3.jpg'
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
+    const { providerLogin, signIn, loading } = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const handleLogin = data => {
+        signIn(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                navigate('/')
+
+
+            })
+            .catch(err => console.log(err))
+    }
+
+    const googleProvider = new GoogleAuthProvider()
+
+    const handleGoogleSignIn = () => {
+        providerLogin(googleProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                navigate('/')
+            })
+            .catch(error => console.error(error))
+    }
     return (
         <div className='w-full relative'>
 
@@ -23,7 +51,7 @@ const Login = () => {
                 <div className='w-[385px] h-[480px] shadow-xl my-[236px] border px-[29px] py-[25px] mx-auto'>
                     <h2 className='text-2xl text-center text-primary font-bold'>Login</h2>
 
-                    <form onSubmit={handleSubmit()}>
+                    <form onSubmit={handleSubmit(handleLogin)}>
                         <div className="form-control w-full max-w-xs">
                             <label className="label"><span className="label-text font-bold">Email</span>
                             </label>
@@ -46,7 +74,7 @@ const Login = () => {
                         <button className="btn btn-primary w-full my-[15px] ">Login</button>
                         <p className='text-primary font-bold'>New to Tourbox? <span className='text-secondary'><Link className='text-white ' to='/register'>Create new account</Link></span></p>
                         <div className="divider mb-[25px] text-white">OR</div>
-                        <button className="btn btn-outline btn-primary w-full">Continue With Goole</button>
+                        <button onClick={handleGoogleSignIn} className="btn btn-outline btn-primary w-full">Continue With Goole</button>
                     </form>
                 </div>
 
