@@ -2,12 +2,19 @@ import React from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { AiFillStar } from "react-icons/ai";
 import { IoPerson, IoTimeOutline } from "react-icons/io5";
+import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const ServiceCard = ({ service }) => {
     const { name, image, price, location, rating, persons, duration } = service;
     return (
         <div className="card card-compact  bg-base-100 hover:shadow-2xl cursor-pointer border border-slate-200 mx-auto relative">
-            <figure><img className=' md:h-72' src={image} alt="Shoes" /></figure>
+            <PhotoProvider>
+                <PhotoView src={image}>
+                    <figure><img className=' md:h-72' src={image} alt="ServiceImage" /></figure>
+                </PhotoView>
+            </PhotoProvider>
+
             <div className="card-body">
                 <h2 className="card-title text-2xl">{name}</h2>
 
