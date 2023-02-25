@@ -1,11 +1,43 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '../Shared/Header/Header';
 import registerImage from '../../assets/login_image 3.jpg'
+import { AuthContext } from '../../Context/AuthProvider';
+import { toast } from 'react-hot-toast';
 
 const Register = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
+    const { createUser, updateUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const handleRegister = data => {
+        createUser(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                toast.success('User created successfully')
+                console.log(data.name);
+                navigate('/')
+            })
+            .catch(error => console.error(error))
+
+        // const saveUser = (name, email) => {
+        //     const user = { name, email }
+        //     fetch('http://localhost:5000/users', {
+        //         method: 'POST',
+        //         headers: {
+        //             'content-type': 'application/json'
+        //         },
+        //         body: JSON.stringify(user)
+        //     })
+        //         .then(res => res.json())
+        //         .then(data => {
+        //             setCreatedUserEmail(email)
+
+        //         })
+        // }
+    }
     return (
         <div className='w-full relative'>
 
@@ -22,7 +54,7 @@ const Register = () => {
             <div className='text-white text-3xl md:text-4xl lg:text-6xl font-bold'>Find Your Next Adventure</div> */}
                 <div className=' w-[385px] h-[460px] shadow-xl my-[450px] md:my-[600px] lg:my-[150px] border px-[29px] py-[25px] mx-auto'>
                     <h2 className='text-2xl text-center text-primary font-bold'>Register</h2>
-                    <form onSubmit={handleSubmit()}>
+                    <form onSubmit={handleSubmit(handleRegister)}>
                         <div className="form-control w-full max-w-xs">
                             <label className="label"><span className="label-text font-bold">Name</span>
                             </label>
@@ -44,7 +76,7 @@ const Register = () => {
                             })} className="input input-bordered w-full max-w-xs" />
                             {errors.password && <p role="alert" className='text-red-700'>{errors.password?.message}</p>}
                         </div>
-                        <p className='mb-4 text-white font-bold'>Already have an account? <Link to='/login' className='text-info font-bold '>Please Login</Link></p>
+                        <p className='mb-4 text-white font-bold'>Already have an account? <Link to='/login' className='text-primary font-bold '>Please Login</Link></p>
 
 
 

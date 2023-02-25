@@ -4,9 +4,10 @@ import { AiFillStar } from "react-icons/ai";
 import { IoPerson, IoTimeOutline } from "react-icons/io5";
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
-    const { name, image, price, location, rating, persons, duration } = service;
+    const { id, name, image, price, location, rating, persons, duration } = service;
     return (
         <div className="card card-compact  bg-base-100 hover:shadow-2xl cursor-pointer border border-slate-200 mx-auto relative">
             <PhotoProvider>
@@ -30,7 +31,7 @@ const ServiceCard = ({ service }) => {
                     <p className='flex items-center'><IoTimeOutline className='mr-1 text-primary'></IoTimeOutline>{duration}</p>
                 </div>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary text-white">See Details</button>
+                    <Link to={`/services/${id}`}><button className="btn btn-primary text-white">See Details</button></Link>
                 </div>
             </div>
         </div>

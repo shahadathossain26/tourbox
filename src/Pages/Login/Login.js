@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
+import { toast } from 'react-hot-toast';
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -16,7 +17,9 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+
                 navigate('/')
+                toast.success("LogIn Successfull")
 
 
             })
