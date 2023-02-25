@@ -8,7 +8,7 @@ module.exports = {
     themes: [
       {
         tourboxthemes: {
-          primary: '#228B22',
+          primary: '#FECC00',
           secondary: '#000000',
 
 
