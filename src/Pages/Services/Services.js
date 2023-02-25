@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Shared/Header/Header';
 import ServiceCard from '../Shared/ServiceCard/ServiceCard';
-import serviceImage from '../../assets/services_1.jpg'
+import serviceImage from '../../assets/second_banner3.jpg'
+import '../Home/Banner/Banner.css'
+import Footer from '../Shared/Footer/Footer';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -24,13 +26,13 @@ const Services = () => {
                         <Header></Header>
 
                     </div>
-                    <div className='text-white text-xl md:text-3xl lg:text-4xl font-bold '><i>See My All</i></div>
-                    <div className='text-white text-3xl md:text-4xl lg:text-6xl font-bold'>Services</div>
+
+                    <div className='text-white text-3xl md:text-4xl lg:text-8xl font-bold banner-text'>Services</div>
 
                 </div>
-                <img className='w-full' src={serviceImage} alt="" />
+                <img className='w-[100vw]' src={serviceImage} alt="" />
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-10 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 mx-10'>
                 {
                     services.map(service => <ServiceCard
                         key={service.id}
@@ -38,6 +40,7 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
+            <Footer></Footer>
         </div>
     );
 };
