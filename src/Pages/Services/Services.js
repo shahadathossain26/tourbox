@@ -4,9 +4,11 @@ import ServiceCard from '../Shared/ServiceCard/ServiceCard';
 import serviceImage from '../../assets/second_banner3.jpg'
 import '../Home/Banner/Banner.css'
 import Footer from '../Shared/Footer/Footer';
+import useTitle from '../../Hooks/useTitle';
 
 const Services = () => {
     const [services, setServices] = useState([]);
+    useTitle("Services")
 
     useEffect(() => {
         fetch('services.json')

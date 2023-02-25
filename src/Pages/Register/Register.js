@@ -5,11 +5,13 @@ import Header from '../Shared/Header/Header';
 import registerImage from '../../assets/login_image 3.jpg'
 import { AuthContext } from '../../Context/AuthProvider';
 import { toast } from 'react-hot-toast';
+import useTitle from '../../Hooks/useTitle';
 
 const Register = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { createUser, updateUser } = useContext(AuthContext);
     const navigate = useNavigate();
+    useTitle("Register")
 
     const handleRegister = data => {
         createUser(data.email, data.password)

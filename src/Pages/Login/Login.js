@@ -6,11 +6,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { toast } from 'react-hot-toast';
+import useTitle from '../../Hooks/useTitle';
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { providerLogin, signIn, loading } = useContext(AuthContext);
     const navigate = useNavigate();
+    useTitle("LogIn")
 
     const handleLogin = data => {
         signIn(data.email, data.password)
