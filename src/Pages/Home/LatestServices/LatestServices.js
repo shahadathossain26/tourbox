@@ -8,7 +8,7 @@ const LatestServices = () => {
     const [latestServices, setLatestServices] = useState([]);
 
     useEffect(() => {
-        fetch('services.json')
+        fetch('http://localhost:5000/latestServices')
             .then(res => res.json())
             .then(data => setLatestServices(data))
     }, [])

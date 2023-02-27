@@ -1,68 +1,146 @@
 [
     {
-        "id": "1",
         "name": "Summer Tour",
         "image": "https://i.ibb.co/pQ4ymVD/summer-tour-2.webp",
         "location": "Miami, Florida",
         "price": "570",
         "rating": "4.2",
-        "persons": "12+",
+        "availability": "30",
         "duration": "4 days",
-        "description": ""
+        "age": "10+",
+        "departure": "San Francisco",
+        "departureTime": "Please arrive by 9:15 AM for a prompt departure at 9:30 AM",
+        "returnTime": "Approximately 8:30 PM",
+        "included": [
+            "Entry fee",
+            "5 Star Accommodation",
+            "Personal Guide",
+            "Departure Taxes"
+        ],
+        "notIncluded": [
+            "Breakfast",
+            "Local transportation"
+        ],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad labore vel cupiditate dolor rem provident minus facere illum, perferendis quos molestiae delectus sunt dignissimos laborum a mollitia error possimus? Quo praesentium et numquam perferendis dolorum. Quas enim ducimus cupiditate iste aliquid magni, quam laboriosam esse odit iure sint quasi assumenda in quibusdam nisi totam, sapiente ipsum, rem impedit repellendus. Repudiandae harum sit possimus. Dicta recusandae veniam adipisci, sapiente consequuntur quisquam beatae sequi commodi? Possimus, in minus vero deserunt quis exercitationem quae corporis, excepturi ab consectetur voluptas autem error omnis vel impedit maiores illo officiis sed? Temporibus in expedita ullam ex natus eius reprehenderit possimus tenetur qui. Iusto cupiditate nostrum, odio quidem doloremque ad. In nemo, eum ut voluptas quisquam mollitia, animi minima dolor est maiores nobis accusantium, quasi debitis iure aut quibusdam? Vitae dolore, quibusdam excepturi optio nobis expedita vero repudiandae in fuga tenetur praesentium repellat animi quisquam, reprehenderit ducimus aliquam possimus eveniet suscipit, error est enim. Accusamus iusto dignissimos nulla consequatur veritatis voluptas, minus exercitationem modi, facere minima ipsum voluptates molestias repellendus pariatur provident error voluptate aliquam quo consectetur explicabo debitis asperiores culpa? Perspiciatis quas atque dolore, ratione accusantium aspernatur dolor repellat recusandae esse quidem tempora temporibus possimus."
     },
     {
-        "id": "2",
         "name": "Hiking Tour",
         "image": "https://i.ibb.co/NYJ8RhS/hiking-tour-2.jpg",
         "location": "Sedona, Arizona",
         "price": "850",
         "rating": "4.4",
-        "persons": "7+",
+        "availability": "15",
         "duration": "6 days",
-        "description": ""
+        "age": "10+",
+        "departure": "San Francisco",
+        "departureTime": "Please arrive by 9:15 AM for a prompt departure at 9:30 AM",
+        "returnTime": "Approximately 9:30 PM",
+        "included": [
+            "Entry fee",
+            "5 Star Accommodation",
+            "Personal Guide",
+            "Departure Taxes"
+        ],
+        "notIncluded": [
+            "Breakfast",
+            "Local transportation"
+        ],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad labore vel cupiditate dolor rem provident minus facere illum, perferendis quos molestiae delectus sunt dignissimos laborum a mollitia error possimus? Quo praesentium et numquam perferendis dolorum. Quas enim ducimus cupiditate iste aliquid magni, quam laboriosam esse odit iure sint quasi assumenda in quibusdam nisi totam, sapiente ipsum, rem impedit repellendus. Repudiandae harum sit possimus. Dicta recusandae veniam adipisci, sapiente consequuntur quisquam beatae sequi commodi? Possimus, in minus vero deserunt quis exercitationem quae corporis, excepturi ab consectetur voluptas autem error omnis vel impedit maiores illo officiis sed? Temporibus in expedita ullam ex natus eius reprehenderit possimus tenetur qui. Iusto cupiditate nostrum, odio quidem doloremque ad. In nemo, eum ut voluptas quisquam mollitia, animi minima dolor est maiores nobis accusantium, quasi debitis iure aut quibusdam? Vitae dolore, quibusdam excepturi optio nobis expedita vero repudiandae in fuga tenetur praesentium repellat animi quisquam, reprehenderit ducimus aliquam possimus eveniet suscipit, error est enim. Accusamus iusto dignissimos nulla consequatur veritatis voluptas, minus exercitationem modi, facere minima ipsum voluptates molestias repellendus pariatur provident error voluptate aliquam quo consectetur explicabo debitis asperiores culpa? Perspiciatis quas atque dolore, ratione accusantium aspernatur dolor repellat recusandae esse quidem tempora temporibus possimus."
     },
     {
-        "id": "3",
         "name": "Diving Tour",
         "image": "https://i.ibb.co/VMbz7Lt/Diving-tour-1.jpg",
         "location": "Koh Lanta, Thailand",
         "price": "600",
         "rating": "4.7",
-        "persons": "4+",
+        "availability": "10",
         "duration": "2 days",
-        "description": ""
+        "age": "10+",
+        "departure": "San Francisco",
+        "departureTime": "Please arrive by 9:15 AM for a prompt departure at 9:30 AM",
+        "returnTime": "Approximately 8:00 PM",
+        "included": [
+            "Entry fee",
+            "5 Star Accommodation",
+            "Personal Guide",
+            "Departure Taxes"
+        ],
+        "notIncluded": [
+            "Breakfast",
+            "Local transportation"
+        ],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad labore vel cupiditate dolor rem provident minus facere illum, perferendis quos molestiae delectus sunt dignissimos laborum a mollitia error possimus? Quo praesentium et numquam perferendis dolorum. Quas enim ducimus cupiditate iste aliquid magni, quam laboriosam esse odit iure sint quasi assumenda in quibusdam nisi totam, sapiente ipsum, rem impedit repellendus. Repudiandae harum sit possimus. Dicta recusandae veniam adipisci, sapiente consequuntur quisquam beatae sequi commodi? Possimus, in minus vero deserunt quis exercitationem quae corporis, excepturi ab consectetur voluptas autem error omnis vel impedit maiores illo officiis sed? Temporibus in expedita ullam ex natus eius reprehenderit possimus tenetur qui. Iusto cupiditate nostrum, odio quidem doloremque ad. In nemo, eum ut voluptas quisquam mollitia, animi minima dolor est maiores nobis accusantium, quasi debitis iure aut quibusdam? Vitae dolore, quibusdam excepturi optio nobis expedita vero repudiandae in fuga tenetur praesentium repellat animi quisquam, reprehenderit ducimus aliquam possimus eveniet suscipit, error est enim. Accusamus iusto dignissimos nulla consequatur veritatis voluptas, minus exercitationem modi, facere minima ipsum voluptates molestias repellendus pariatur provident error voluptate aliquam quo consectetur explicabo debitis asperiores culpa? Perspiciatis quas atque dolore, ratione accusantium aspernatur dolor repellat recusandae esse quidem tempora temporibus possimus."
     },
     {
-        "id": "4",
         "name": "Winter Action",
         "image": "https://i.ibb.co/4VrGpSr/winter-action-2.jpg",
         "location": "Paris, France",
         "price": "850",
         "rating": "5.0",
-        "persons": "16+",
+        "availability": "20",
         "duration": "7 days",
-        "description": ""
+        "age": "10+",
+        "departure": "San Francisco",
+        "departureTime": "Please arrive by 9:15 AM for a prompt departure at 9:30 AM",
+        "returnTime": "Approximately 8:30 PM",
+        "included": [
+            "Entry fee",
+            "5 Star Accommodation",
+            "Personal Guide",
+            "Departure Taxes"
+        ],
+        "notIncluded": [
+            "Breakfast",
+            "Local transportation"
+        ],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad labore vel cupiditate dolor rem provident minus facere illum, perferendis quos molestiae delectus sunt dignissimos laborum a mollitia error possimus? Quo praesentium et numquam perferendis dolorum. Quas enim ducimus cupiditate iste aliquid magni, quam laboriosam esse odit iure sint quasi assumenda in quibusdam nisi totam, sapiente ipsum, rem impedit repellendus. Repudiandae harum sit possimus. Dicta recusandae veniam adipisci, sapiente consequuntur quisquam beatae sequi commodi? Possimus, in minus vero deserunt quis exercitationem quae corporis, excepturi ab consectetur voluptas autem error omnis vel impedit maiores illo officiis sed? Temporibus in expedita ullam ex natus eius reprehenderit possimus tenetur qui. Iusto cupiditate nostrum, odio quidem doloremque ad. In nemo, eum ut voluptas quisquam mollitia, animi minima dolor est maiores nobis accusantium, quasi debitis iure aut quibusdam? Vitae dolore, quibusdam excepturi optio nobis expedita vero repudiandae in fuga tenetur praesentium repellat animi quisquam, reprehenderit ducimus aliquam possimus eveniet suscipit, error est enim. Accusamus iusto dignissimos nulla consequatur veritatis voluptas, minus exercitationem modi, facere minima ipsum voluptates molestias repellendus pariatur provident error voluptate aliquam quo consectetur explicabo debitis asperiores culpa? Perspiciatis quas atque dolore, ratione accusantium aspernatur dolor repellat recusandae esse quidem tempora temporibus possimus."
     },
     {
-        "id": "5",
         "name": "UK Trip",
         "image": "https://i.ibb.co/wW8FRyt/UK-trip-3.webp",
         "location": "London, UK",
         "price": "570",
         "rating": "4.0",
-        "persons": "10+",
+        "availability": "24",
         "duration": "4 days",
-        "description": ""
+        "age": "10+",
+        "departure": "San Francisco",
+        "departureTime": "Please arrive by 9:15 AM for a prompt departure at 9:30 AM",
+        "returnTime": "Approximately 9:00 PM",
+        "included": [
+            "Entry fee",
+            "5 Star Accommodation",
+            "Personal Guide",
+            "Departure Taxes"
+        ],
+        "notIncluded": [
+            "Breakfast",
+            "Local transportation"
+        ],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad labore vel cupiditate dolor rem provident minus facere illum, perferendis quos molestiae delectus sunt dignissimos laborum a mollitia error possimus? Quo praesentium et numquam perferendis dolorum. Quas enim ducimus cupiditate iste aliquid magni, quam laboriosam esse odit iure sint quasi assumenda in quibusdam nisi totam, sapiente ipsum, rem impedit repellendus. Repudiandae harum sit possimus. Dicta recusandae veniam adipisci, sapiente consequuntur quisquam beatae sequi commodi? Possimus, in minus vero deserunt quis exercitationem quae corporis, excepturi ab consectetur voluptas autem error omnis vel impedit maiores illo officiis sed? Temporibus in expedita ullam ex natus eius reprehenderit possimus tenetur qui. Iusto cupiditate nostrum, odio quidem doloremque ad. In nemo, eum ut voluptas quisquam mollitia, animi minima dolor est maiores nobis accusantium, quasi debitis iure aut quibusdam? Vitae dolore, quibusdam excepturi optio nobis expedita vero repudiandae in fuga tenetur praesentium repellat animi quisquam, reprehenderit ducimus aliquam possimus eveniet suscipit, error est enim. Accusamus iusto dignissimos nulla consequatur veritatis voluptas, minus exercitationem modi, facere minima ipsum voluptates molestias repellendus pariatur provident error voluptate aliquam quo consectetur explicabo debitis asperiores culpa? Perspiciatis quas atque dolore, ratione accusantium aspernatur dolor repellat recusandae esse quidem tempora temporibus possimus."
     },
     {
-        "id": "6",
         "name": "Camping Tour",
         "image": "https://i.ibb.co/fqZVTSZ/camping-tour-1.jpg",
         "location": "Big Bend, Texas",
         "price": "500",
         "rating": "4.1",
-        "persons": "20+",
+        "availability": "50",
         "duration": "3 days",
-        "description": ""
+        "age": "10+",
+        "departure": "San Francisco",
+        "departureTime": "Please arrive by 9:15 AM for a prompt departure at 9:30 AM",
+        "returnTime": "Approximately 9:30 PM",
+        "included": [
+            "Entry fee",
+            "5 Star Accommodation",
+            "Personal Guide",
+            "Departure Taxes"
+        ],
+        "notIncluded": [
+            "Breakfast",
+            "Local transportation"
+        ],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad labore vel cupiditate dolor rem provident minus facere illum, perferendis quos molestiae delectus sunt dignissimos laborum a mollitia error possimus? Quo praesentium et numquam perferendis dolorum. Quas enim ducimus cupiditate iste aliquid magni, quam laboriosam esse odit iure sint quasi assumenda in quibusdam nisi totam, sapiente ipsum, rem impedit repellendus. Repudiandae harum sit possimus. Dicta recusandae veniam adipisci, sapiente consequuntur quisquam beatae sequi commodi? Possimus, in minus vero deserunt quis exercitationem quae corporis, excepturi ab consectetur voluptas autem error omnis vel impedit maiores illo officiis sed? Temporibus in expedita ullam ex natus eius reprehenderit possimus tenetur qui. Iusto cupiditate nostrum, odio quidem doloremque ad. In nemo, eum ut voluptas quisquam mollitia, animi minima dolor est maiores nobis accusantium, quasi debitis iure aut quibusdam? Vitae dolore, quibusdam excepturi optio nobis expedita vero repudiandae in fuga tenetur praesentium repellat animi quisquam, reprehenderit ducimus aliquam possimus eveniet suscipit, error est enim. Accusamus iusto dignissimos nulla consequatur veritatis voluptas, minus exercitationem modi, facere minima ipsum voluptates molestias repellendus pariatur provident error voluptate aliquam quo consectetur explicabo debitis asperiores culpa? Perspiciatis quas atque dolore, ratione accusantium aspernatur dolor repellat recusandae esse quidem tempora temporibus possimus."
     }
 ]
