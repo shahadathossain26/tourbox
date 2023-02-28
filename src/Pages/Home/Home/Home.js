@@ -6,8 +6,10 @@ import WhyTourbox from '../../WhyTourbox/WhyTourbox';
 import Banner from '../Banner/Banner';
 import GetStarted from '../GetStarted/GetStarted';
 import HelicopterTour from '../HelicopterTour/HelicopterTour';
+import Hotels from '../Hotels/Hotels';
 import LatestServices from '../LatestServices/LatestServices';
 import Subscribe from '../Subscribe/Subscribe';
+import TravelWithTourbox from '../TravelWithTourbox/TravelWithTourbox';
 
 const Home = () => {
     useTitle("Home")
@@ -18,8 +20,10 @@ const Home = () => {
             <LatestServices></LatestServices>
             <WhyTourbox></WhyTourbox>
             <HelicopterTour></HelicopterTour>
-            <Subscribe></Subscribe>
+            <TravelWithTourbox></TravelWithTourbox>
+            <Hotels></Hotels>
             <GetStarted></GetStarted>
+            <Subscribe></Subscribe>
             <Footer></Footer>
         </div>
     );
