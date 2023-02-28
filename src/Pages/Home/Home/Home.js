@@ -8,6 +8,7 @@ import GetStarted from '../GetStarted/GetStarted';
 import HelicopterTour from '../HelicopterTour/HelicopterTour';
 import Hotels from '../Hotels/Hotels';
 import LatestServices from '../LatestServices/LatestServices';
+import MostDestinations from '../MostDestinations/MostDestinations';
 import Subscribe from '../Subscribe/Subscribe';
 import TravelWithTourbox from '../TravelWithTourbox/TravelWithTourbox';
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Banner></Banner>
             <LatestServices></LatestServices>
             <WhyTourbox></WhyTourbox>
+            <MostDestinations></MostDestinations>
             <HelicopterTour></HelicopterTour>
             <TravelWithTourbox></TravelWithTourbox>
             <Hotels></Hotels>
