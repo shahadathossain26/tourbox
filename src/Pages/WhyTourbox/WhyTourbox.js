@@ -7,13 +7,13 @@ import image3 from '../../assets/why_tourbox_images/image3.jpg'
 const WhyTourbox = () => {
     return (
         <div>
-            <div className='text-center mt-10 lg:mt-16'>
+            <div className='text-center mt-10 lg:mt-16' data-aos="fade-down" data-aos-duration="1500">
                 <img className='w-[70px] md:w-[80px] lg:w-[90px] mx-auto mb-5' src={ballonImage} alt="" />
-                <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold'>Why Tourbox?</h2>
+                <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold' >Why Tourbox?</h2>
                 <p className='text-center mt-5 px-16 md:px-40 lg:px-96 text-xl'>For the best 10 years, we've continually ranked #1 for service, excellence and outstanding value. This year is no different – and we’d like to take an opportunity to thank you for making our last 10 years so amazing.</p>
             </div>
 
-            <div className='md:flex justify-between items-center mt-10  bg-slate-100'>
+            <div className='md:flex justify-between items-center mt-10  bg-slate-100' data-aos="zoom-in" data-aos-duration="1000">
                 <div className='px-[80px] py-16'>
                     <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold mb-3'>Experience Tourbox like never before</h2>
                     <p>From Central Park on down to Lady Liberty - and everything around and in between - here are the key things to see on a visit to Tourbox.</p>
@@ -24,7 +24,7 @@ const WhyTourbox = () => {
                 </div>
             </div>
 
-            <div className='mt-10 md:flex justify-between items-center bg-slate-100'>
+            <div className='mt-10 md:flex justify-between items-center bg-slate-100' data-aos="zoom-in" data-aos-duration="1000">
                 <div>
                     <img className='w-[1200px]' src={image2} alt="" />
                 </div>
@@ -35,7 +35,7 @@ const WhyTourbox = () => {
                 </div>
             </div>
 
-            <div className='md:flex justify-between items-center mt-10  bg-slate-100'>
+            <div className='md:flex justify-between items-center mt-10  bg-slate-100' data-aos="zoom-in" data-aos-duration="1000">
                 <div className='px-[80px] py-16'>
                     <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold mb-3'>See it all</h2>
                     <p>This is the best way to experience New York City. You can sit back and relax as your tour guide shows you New York City in the most efficient way possible.</p>

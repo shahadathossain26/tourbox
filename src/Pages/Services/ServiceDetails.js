@@ -6,21 +6,28 @@ import { IoPerson, IoTimeOutline } from "react-icons/io5";
 import { useLoaderData } from 'react-router-dom';
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Context/AuthProvider';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 import Footer from '../Shared/Footer/Footer';
+import ReviewCard from './ReviewCard';
 
 const ServiceDetails = () => {
     const { user } = useContext(AuthContext);
-    const { register, formState: { errors }, handleSubmit } = useForm();
+    const { register, formState: { errors }, handleSubmit, reset } = useForm();
+    const [reviews, setReviews] = useState([]);
 
     const { _id, name, image, description, price, location, availability, duration, rating, departure, age, returnTime, departureTime, included, notIncluded } = useLoaderData();
 
-
     const imgbbKey = process.env.REACT_APP_imgbbKey;
     console.log(imgbbKey)
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/reviews/${_id}`)
+            .then(res => res.json())
+            .then(data => setReviews(data));
+    }, [_id])
 
     const handleMyReview = data => {
         const image = data.image[0]
@@ -36,8 +43,9 @@ const ServiceDetails = () => {
             .then(imgData => {
                 if (imgData.success) {
                     const review = {
-                        name: name,
+                        name: data.name,
                         image: imgData.data.url,
+                        service_name: name,
                         comment: data.comment,
                         service_id: _id,
                         email: data.email,
@@ -53,6 +61,8 @@ const ServiceDetails = () => {
                         .then(res => res.json())
                         .then(result => {
                             console.log(result);
+                            reset();
+
                             toast.success('Product Added Successfully');
 
                         })
@@ -159,45 +169,61 @@ const ServiceDetails = () => {
                 </div>
             </div >
 
+            <div className='mt-20'>
+                <h2 className='text-2xl md:text-3xl lg:text-4xl text-center font-bold mb-5'>Look What People Say About Us</h2>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mx-16'>
+
+                    {
+                        reviews.map(review => <ReviewCard
+                            key={review._id}
+                            review={review}
+                        ></ReviewCard>)
+                    }
+                </div>
+            </div>
+
             <div>
                 {user?.email ?
-                    <div className='w-[385px] h-[480px] shadow-xl my-[236px] border px-[29px] py-[25px] mx-auto'>
-                        <h2 className='text-2xl text-center text-primary font-bold'>Login</h2>
+                    <div className='mt-28'>
+                        <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-center'>Share Your Feedback</h2>
+                        <div className='w-[385px] shadow-xl my-[36px] border px-[29px] py-[25px] mx-auto'>
+                            <h2 className='text-2xl text-center text-primary font-bold'>Comment</h2>
 
-                        <form onSubmit={handleSubmit(handleMyReview)}>
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label"><span className="label-text font-bold">Name</span>
-                                </label>
-                                <input type="text" {...register("name")} className="input input-bordered w-full max-w-xs" />
-                            </div>
+                            <form onSubmit={handleSubmit(handleMyReview)}>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label"><span className="label-text font-bold">Name</span>
+                                    </label>
+                                    <input type="text" {...register("name")} className="input input-bordered w-full max-w-xs" />
+                                </div>
 
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label"><span className="label-text font-bold">Email</span>
-                                </label>
-                                <input type="text" {...register("email", { required: "Email Address is required" })} className="input input-bordered w-full max-w-xs bg-slate-200" value={user?.email} readOnly />
-                                {errors.email && <p role="alert" className='text-red-700'>{errors.email?.message}</p>}
-                            </div>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label"><span className="label-text font-bold">Email</span>
+                                    </label>
+                                    <input type="text" {...register("email", { required: "Email Address is required" })} className="input input-bordered w-full max-w-xs bg-slate-200" value={user?.email} readOnly />
+                                    {errors.email && <p role="alert" className='text-red-700'>{errors.email?.message}</p>}
+                                </div>
 
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label"><span className="label-text font-bold">Image</span>
-                                </label>
-                                <input type="file" {...register("image", { required: "Email Address is required" })} className="input input-bordered w-full max-w-xs" />
-                                {errors.image && <p role="alert" className='text-red-700'>{errors.image?.message}</p>}
-                            </div>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label"><span className="label-text font-bold">Image</span>
+                                    </label>
+                                    <input type="file" {...register("image", { required: "Email Address is required" })} className="input input-bordered w-full max-w-xs" />
+                                    {errors.image && <p role="alert" className='text-red-700'>{errors.image?.message}</p>}
+                                </div>
 
-                            <div className="form-control w-full  ">
-                                <label className="label"><span className="label-text font-bold">Comment</span>
-                                </label>
-                                <textarea {...register("comment")} className="textarea textarea-bordered mb-5 h-28" placeholder="Write Your Comment"></textarea>
-                                {/* <input type="text"  placeholder='Description' className="input input-bordered w-full "/> */}
-                                {/* {errors.password && <p role="alert" className='text-red-700'>{errors.password?.message}</p>} */}
-                            </div>
+                                <div className="form-control w-full  ">
+                                    <label className="label"><span className="label-text font-bold">Comment</span>
+                                    </label>
+                                    <textarea {...register("comment")} className="textarea textarea-bordered mb-5 h-28" placeholder="Write Your Comment"></textarea>
+                                    {/* <input type="text"  placeholder='Description' className="input input-bordered w-full "/> */}
+                                    {/* {errors.password && <p role="alert" className='text-red-700'>{errors.password?.message}</p>} */}
+                                </div>
 
 
 
-                            <button className="btn btn-primary w-full my-[15px] ">Login</button>
+                                <button className="btn btn-primary w-full my-[15px] ">Comment</button>
 
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     : <></>
                 }

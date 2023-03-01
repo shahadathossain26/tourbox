@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Shared/Header/Header';
 import serviceImage from '../../assets/second_banner3.jpg'
 
-const AddService = () => {
+const MyReviews = () => {
     return (
         <div className='w-full relative'>
 
@@ -16,7 +16,7 @@ const AddService = () => {
 
                 </div>
 
-                <div className='text-white text-3xl md:text-4xl lg:text-8xl font-bold banner-text'>Add Service</div>
+                <div className='text-white text-3xl md:text-4xl lg:text-8xl font-bold banner-text'>My Reviews</div>
 
             </div>
             <img className='w-[100vw]' src={serviceImage} alt="" />
@@ -24,4 +24,4 @@ const AddService = () => {
     );
 };
 
-export default AddService;
+export default MyReviews;

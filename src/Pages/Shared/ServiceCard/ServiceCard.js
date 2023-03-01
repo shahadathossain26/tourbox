@@ -31,7 +31,7 @@ const ServiceCard = ({ service }) => {
                     <p className='flex items-center'><IoTimeOutline className='mr-1 text-primary'></IoTimeOutline>{duration}</p>
                 </div>
                 <div className="card-actions justify-end">
-                    <Link to={`/services/${_id}`}><button className="btn btn-primary text-white">See Details</button></Link>
+                    <Link to={`/services/${_id}`}><button className='border border-primary bg-primary text-white px-6 py-3 rounded font-bold'>See All Tours</button></Link>
                 </div>
             </div>
         </div>

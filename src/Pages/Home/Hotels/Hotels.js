@@ -13,7 +13,8 @@ const Hotels = () => {
                 <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-10'>
-                <div className='relative'>
+                <div className='relative' data-aos="fade-up"
+                    data-aos-duration="2000">
                     <div className='w-full h-full top-0 left-0 absolute bg-gradient-to-t from-black via-black-100 opacity-30'>
 
                     </div>
@@ -30,7 +31,8 @@ const Hotels = () => {
                     </div>
                 </div>
 
-                <div className='relative'>
+                <div className='relative' data-aos="fade-down"
+                    data-aos-duration="2000">
                     <div className='w-full h-full top-0 left-0 absolute bg-gradient-to-t from-black via-black-100 opacity-30'>
                     </div>
 
@@ -48,7 +50,8 @@ const Hotels = () => {
                 </div>
 
                 <div>
-                    <div className='relative'>
+                    <div className='relative' data-aos="fade-up"
+                        data-aos-duration="2000">
                         <div className='w-full h-full top-0 left-0 absolute bg-gradient-to-t from-black via-black-100 opacity-30'>
                         </div>
                         <img className='w-full' src={hotel3} alt="" />
@@ -67,7 +70,8 @@ const Hotels = () => {
 
                 </div>
 
-                <div className='relative'>
+                <div className='relative' data-aos="fade-down"
+                    data-aos-duration="2000">
                     <div className='w-full h-full top-0 left-0 absolute bg-gradient-to-t from-black via-black-100 opacity-30'>
                     </div>
                     <img className='w-full' src={hotel4} alt="" />

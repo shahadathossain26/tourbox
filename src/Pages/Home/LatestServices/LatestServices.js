@@ -18,13 +18,13 @@ const LatestServices = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10'>
                 {
                     latestServices.slice(-3).map(service => <ServiceCard
-                        key={service.id}
+                        key={service._id}
                         service={service}
                     ></ServiceCard>)
                 }
             </div>
             <div className='mt-5 text-center'>
-                <Link to='/services'><button className="btn btn-outline btn-primary text-xl">See All <BsBoxArrowInRight></BsBoxArrowInRight></button></Link>
+                <Link to='/services'><button className='border border-primary bg-primary text-white px-6 py-3 rounded font-bold mt-5'>See All Services <BsBoxArrowInRight className=' inline-block text-2xl'></BsBoxArrowInRight></button></Link>
             </div>
         </div>
     );

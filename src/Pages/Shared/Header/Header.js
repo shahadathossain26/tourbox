@@ -14,20 +14,7 @@ const Header = () => {
 
 
 
-    const menuItems = <>
-        <li><Link className='text-white font-bold text-[18px]' to='/'>Home</Link></li>
-        {/* <div>
-            {user?.email ?
-                <div className='flex'>
-                    <li><Link to='/myreviews'>My Reviews</Link></li>
-                    <li><Link to='/addservice'>Add Service</Link></li>
-                </div>
-                : <></>
-            }
-        </div> */}
-        <li><Link className='text-white font-bold text-[18px]' to='/blog'>Blog</Link></li>
 
-    </>
     return (
         <div className="navbar px-0 pr-5 lg:px-10 ">
             <div className="navbar-start z-[1001]">
@@ -37,15 +24,8 @@ const Header = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><Link className='text-black font-bold text-[18px]' to='/'>Home</Link></li>
-                        <div>
-                            {user?.email ?
-                                <div className='flex flex-col'>
-                                    <li><Link className='text-black font-bold text-[18px]' to='/myreviews'>My Reviews</Link></li>
-                                    <li><Link className='text-black font-bold text-[18px]' to='/addservice'>Add Service</Link></li>
-                                </div>
-                                : <></>
-                            }
-                        </div>
+                        <li><Link className='text-black font-bold text-[18px]' to='/my_reviews'>My Reviews</Link></li>
+                        <li><Link className='text-black font-bold text-[18px]' to='/add_service'>Add Service</Link></li>
                         <li><Link className='text-black font-bold text-[18px]' to='/blog'>Blog</Link></li>
                     </ul>
                 </div>
@@ -56,15 +36,8 @@ const Header = () => {
             <div className="navbar-center hidden lg:flex z-[1001]">
                 <ul className="menu menu-horizontal px-1">
                     <li><Link className='text-white font-bold text-[18px]' to='/'>Home</Link></li>
-                    <div>
-                        {user?.email ?
-                            <div className='flex'>
-                                <li><Link className='text-white font-bold text-[18px]' to='/myreviews'>My Reviews</Link></li>
-                                <li><Link className='text-white font-bold text-[18px]' to='/addservice'>Add Service</Link></li>
-                            </div>
-                            : <></>
-                        }
-                    </div>
+                    <li><Link className='text-white font-bold text-[18px]' to='/my_reviews'>My Reviews</Link></li>
+                    <li><Link className='text-white font-bold text-[18px]' to='/add_service'>Add Service</Link></li>
                     <li><Link className='text-white font-bold text-[18px]' to='/blog'>Blog</Link></li>
                 </ul>
             </div>
