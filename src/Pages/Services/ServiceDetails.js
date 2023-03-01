@@ -24,7 +24,7 @@ const ServiceDetails = () => {
     console.log(imgbbKey)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews/${_id}`)
+        fetch(`https://tourbox-server.vercel.app/reviews/${_id}`)
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [_id])
@@ -51,7 +51,7 @@ const ServiceDetails = () => {
                         email: data.email,
                     }
                     console.log(review)
-                    fetch('http://localhost:5000/reviews', {
+                    fetch('https://tourbox-server.vercel.app/reviews', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'
@@ -71,22 +71,7 @@ const ServiceDetails = () => {
 
 
 
-        // fetch('http://localhost:5000/reviews', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(review)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data)
-        //         if (data.acknowledged) {
-        //             form.reset();
-        //             alert('Review placed succesfully')
-        //         }
-        //     })
-        //     .catch(error => console.error(error));
+
 
     }
 

@@ -8,7 +8,7 @@ const LatestServices = () => {
     const [latestServices, setLatestServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/latestServices')
+        fetch('https://tourbox-server.vercel.app/latestServices')
             .then(res => res.json())
             .then(data => setLatestServices(data))
     }, [])

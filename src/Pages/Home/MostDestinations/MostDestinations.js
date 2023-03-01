@@ -8,7 +8,7 @@ import "./MostDestinations.css"
 const MostDestinations = () => {
     return (
         <div className='lg:flex justify-between items-center mt-10 mx-10'>
-            <div className='lg:w-1/2 lg:px-16 md_background' data-aos="fade-right"
+            <div className='lg:w-1/2 lg:px-16 md_background' data-aos="fade-up"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
                 <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold mb-5'>Most Destinations</h2>
@@ -25,7 +25,7 @@ const MostDestinations = () => {
                     <span>Australia - 3</span>
                 </div>
             </div>
-            <div className='grid grid-cols-3 gap-2 lg:gap-4 lg:w-3/4 mt-5' data-aos="fade-left"
+            <div className='grid grid-cols-3 gap-2 lg:gap-4 lg:w-3/4 mt-5' data-aos="fade-up"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
                 <div className='relative'>
